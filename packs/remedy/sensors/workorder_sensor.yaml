@@ -1,0 +1,15 @@
+---
+  class_name: "WorkOrderSensor"
+  entry_point: "workorder_sensor.py"
+  description: "WorkOrder sensor that emits triggers from Remedy Work Orders"
+  trigger_types:
+    -
+      name: "event"
+      description: "Work Order Trigger"
+      payload_schema:
+        type: "object"
+        properties:
+          executed_at:
+            type: "string"
+            format: "date-time"
+            default: "2014-07-30 05:04:24.578325"

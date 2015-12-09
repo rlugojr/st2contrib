@@ -1,0 +1,11 @@
+---
+name: "insert_test"
+runner_type: "python-script"
+description: "Creates a new entry in a test schema using the provided entry values"
+enabled: true
+entry_point: "insert_test.py"
+parameters:
+  description:
+    type: "string"
+    description: "Description"
+    required: true

@@ -1,0 +1,19 @@
+---
+name: "get"
+runner_type: "python-script"
+description: "Retrieves a particular entry in the requested schema using the given entry id"
+enabled: true
+entry_point: "get.py"
+parameters:
+  schema:
+    type: "string"
+    description: "The schema name to retrieve the entry for"
+    required: true
+  entry_id:
+    type: "string"
+    description: "The entry id of the entry that you wish to retrieve"
+    required: true
+  fields:
+    type: "string"
+    description: "A list of field names to retrieve from the schema"
+    required: true

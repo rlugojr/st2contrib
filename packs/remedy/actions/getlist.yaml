@@ -1,0 +1,27 @@
+---
+name: "getlist"
+runner_type: "python-script"
+description: "Runs a specified qualification string against a chosen schema and returns the all related records with the fields specified by the caller"
+enabled: true
+entry_point: "getlist.py"
+parameters:
+  schema:
+    type: "string"
+    description: "The schema name to run the query against"
+    required: true
+  qualifier:
+    type: "string"
+    description: "The query determining which records to retrieve"
+    required: true
+  fields:
+    type: "string"
+    description: "A list of field names to retrieve from the schema"
+    required: true
+  offset:
+    type: "string"
+    description: "The index of the first record to retrieve"
+    required: true
+  limit:
+    type: "string"
+    description: "Limit the number of returned results to a given number"
+    required: true

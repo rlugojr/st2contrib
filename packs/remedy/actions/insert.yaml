@@ -1,0 +1,15 @@
+---
+name: "insert"
+runner_type: "python-script"
+description: "Creates a new entry in a given schema using the provided entry values"
+enabled: true
+entry_point: "insert.py"
+parameters:
+  schema:
+    type: "string"
+    description: "The schema where the entry is to be created"
+    required: true
+  entry_values:
+    type: "object"
+    description: "A dict containing the field names and values for the new entry"
+    required: true

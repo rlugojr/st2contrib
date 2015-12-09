@@ -1,0 +1,15 @@
+---
+name: "delete"
+runner_type: "python-script"
+description: "Deletes a particular entry in the requested schema using the given entry id"
+enabled: true
+entry_point: "delete.py"
+parameters:
+  schema:
+    type: "string"
+    description: "The schema name to delete the entry from"
+    required: true
+  entry_id:
+    type: "string"
+    description: "The entry id of the entry that you wish to delete"
+    required: true
