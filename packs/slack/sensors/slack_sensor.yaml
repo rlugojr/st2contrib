@@ -20,3 +20,17 @@
             type: "integer"
           timestamp_raw:
             type: "string"
+    -
+      name: "message_channel_join"
+      description: "Trigger indicating a user has joined the channel"
+      payload_schema:
+        type: "object"
+        properties:
+          user:
+            type: "object"
+          text:
+            type: "string"
+          timestamp:
+            type: "integer"
+          timestamp_raw:
+            type "string"

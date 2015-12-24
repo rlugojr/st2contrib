@@ -32,6 +32,9 @@ class SlackSensor(PollingSensor):
         self._handlers = {
             'message': self._handle_message_ignore_errors,
         }
+        self._message_subtype_handlers = {
+            'channel_join': self._handle_message_channel_join,
+        }
 
         self._user_info_cache = {}
         self._channel_info_cache = {}
@@ -140,51 +143,56 @@ class SlackSensor(PollingSensor):
             # Skip unsupported event
             return
 
-        # Note: We resolve user and channel information to provide more context
-        user_info = self._get_user_info(user_id=data['user'])
-        channel_info = None
-        channel_id = data.get('channel', '')
-        # Grabbing info based on the type of channel the message is in.
-        if channel_id.startswith('C'):
-            channel_info = self._get_channel_info(channel_id=channel_id)
-        elif channel_id.startswith('G'):
-            channel_info = self._get_group_info(group_id=channel_id)
-
-        if not user_info or not channel_info:
-            # Deleted user or channel
-            return
-
-        # Removes formatting from messages if enabled by the user in config
-        if self._strip_formatting:
-            text = re.sub("<http.*[|](.*)>", "\\1", data['text'])
+        if 'subtype' in data and data['subtype'] in self._message_subtype_handlers:
+            subtype = data['subtype']
+            handler = self._message_subtype_handlers.get(subtype)
+            handler(data)
         else:
-            text = data['text']
+          # Note: We resolve user and channel information to provide more context
+          user_info = self._get_user_info(user_id=data['user'])
+          channel_info = None
+          channel_id = data.get('channel', '')
+          # Grabbing info based on the type of channel the message is in.
+          if channel_id.startswith('C'):
+              channel_info = self._get_channel_info(channel_id=channel_id)
+          elif channel_id.startswith('G'):
+              channel_info = self._get_group_info(group_id=channel_id)
 
-        payload = {
-            'user': {
-                'id': user_info['id'],
-                'name': user_info['name'],
-                'first_name': user_info['profile'].get('first_name',
-                                                       'Unknown'),
-                'last_name': user_info['profile'].get('last_name',
-                                                      'Unknown'),
-                'real_name': user_info['profile'].get('real_name',
-                                                      'Unknown'),
-                'is_admin': user_info['is_admin'],
-                'is_owner': user_info['is_owner']
-            },
-            'channel': {
-                'id': channel_info['id'],
-                'name': channel_info['name'],
-                'topic': channel_info['topic']['value'],
-                'is_group': channel_info.get('is_group', False),
-            },
-            'timestamp': int(float(data['ts'])),
-            'timestamp_raw': data['ts'],
-            'text': text
-        }
+          if not user_info or not channel_info:
+              # Deleted user or channel
+              return
 
-        self._sensor_service.dispatch(trigger=trigger, payload=payload)
+          # Removes formatting from messages if enabled by the user in config
+          if self._strip_formatting:
+              text = re.sub("<http.*[|](.*)>", "\\1", data['text'])
+          else:
+              text = data['text']
+
+          payload = {
+              'user': {
+                  'id': user_info['id'],
+                  'name': user_info['name'],
+                  'first_name': user_info['profile'].get('first_name',
+                                                        'Unknown'),
+                  'last_name': user_info['profile'].get('last_name',
+                                                        'Unknown'),
+                  'real_name': user_info['profile'].get('real_name',
+                                                        'Unknown'),
+                  'is_admin': user_info['is_admin'],
+                  'is_owner': user_info['is_owner']
+              },
+              'channel': {
+                  'id': channel_info['id'],
+                  'name': channel_info['name'],
+                  'topic': channel_info['topic']['value'],
+                  'is_group': channel_info.get('is_group', False),
+              },
+              'timestamp': int(float(data['ts'])),
+              'timestamp_raw': data['ts'],
+              'text': text
+          }
+
+          self._sensor_service.dispatch(trigger=trigger, payload=payload)
 
     def _handle_message_ignore_errors(self, data):
         try:
@@ -237,3 +245,27 @@ class SlackSensor(PollingSensor):
         result = self._client.api_call(method, **kwargs)
         result = json.loads(result)
         return result
+
+    def _handle_message_channel_join(self, data):
+        trigger = 'slack.message_channel_join'
+        user_info = self._get_user_info(user_id=data['user'])
+
+        payload = {
+            'user': {
+                'id': user_info['id'],
+                'name': user_info['name'],
+                'first_name': user_info['profile'].get('first_name',
+                                                      'Unknown'),
+                'last_name': user_info['profile'].get('last_name',
+                                                      'Unknown'),
+                'real_name': user_info['profile'].get('real_name',
+                                                      'Unknown'),
+                'is_admin': user_info['is_admin'],
+                'is_owner': user_info['is_owner']
+            },
+            'timestamp': int(float(data['ts'])),
+            'timestamp_raw': data['ts'],
+            'text': text
+        }
+
+        self._sensor_service.dispatch(trigger=trigger, payload=payload)
