@@ -143,7 +143,8 @@ class SlackSensor(PollingSensor):
             # Skip unsupported event
             return
 
-        if 'subtype' in data and data['subtype'] in self._message_subtype_handlers:
+        subtype = data.get('subtype', None)
+        if subtype in self._message_subtype_handlers:
             subtype = data['subtype']
             handler = self._message_subtype_handlers.get(subtype)
             handler(data)
@@ -168,29 +169,17 @@ class SlackSensor(PollingSensor):
           else:
               text = data['text']
 
-          payload = {
-              'user': {
-                  'id': user_info['id'],
-                  'name': user_info['name'],
-                  'first_name': user_info['profile'].get('first_name',
-                                                        'Unknown'),
-                  'last_name': user_info['profile'].get('last_name',
-                                                        'Unknown'),
-                  'real_name': user_info['profile'].get('real_name',
-                                                        'Unknown'),
-                  'is_admin': user_info['is_admin'],
-                  'is_owner': user_info['is_owner']
-              },
+          common_payload = self._get_message_common_payload(data)
+          channel_payload = {
               'channel': {
                   'id': channel_info['id'],
                   'name': channel_info['name'],
                   'topic': channel_info['topic']['value'],
                   'is_group': channel_info.get('is_group', False),
               },
-              'timestamp': int(float(data['ts'])),
-              'timestamp_raw': data['ts'],
-              'text': text
           }
+          payload = common_payload.copy()
+          payload.update(channel_payload)
 
           self._sensor_service.dispatch(trigger=trigger, payload=payload)
 
@@ -249,7 +238,12 @@ class SlackSensor(PollingSensor):
     def _handle_message_channel_join(self, data):
         trigger = 'slack.message_channel_join'
         user_info = self._get_user_info(user_id=data['user'])
+        payload = self._get_message_common_payload(data)
 
+        self._sensor_service.dispatch(trigger=trigger, payload=payload)
+
+    def _get_message_common_payload(self, data):
+        user_info = self._get_user_info(user_id=data['user'])
         payload = {
             'user': {
                 'id': user_info['id'],
@@ -268,4 +262,4 @@ class SlackSensor(PollingSensor):
             'text': text
         }
 
-        self._sensor_service.dispatch(trigger=trigger, payload=payload)
+        return payload
