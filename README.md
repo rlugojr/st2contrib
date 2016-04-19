@@ -66,7 +66,7 @@ Icon | Name | Description | Keywords | Author | Latest Version | Available Resou
 [![activecampaign icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/activecampaign/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/activecampaign) | [activecampaign](https://github.com/StackStorm/st2contrib/tree/master/packs/activecampaign) | Integration with ActiveCampaign |  | [DoriftoShoes](mailto:patrick@stackstorm.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#activecampaign-pack)
 [![alertlogic icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/alertlogic/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/alertlogic) | [alertlogic](https://github.com/StackStorm/st2contrib/tree/master/packs/alertlogic) | AlertLogic ActiveIntegration APIs | AlertLogic | [Jon Middleton](mailto:jon.middleton@pulsant.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#alertlogic-pack)
 [![ansible icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/ansible/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/ansible) | [ansible](https://github.com/StackStorm/st2contrib/tree/master/packs/ansible) | st2 content pack containing ansible integrations | ansible, cfg management, configuration management | [st2-dev](mailto:info@stackstorm.com) | 0.3 | [click](https://github.com/StackStorm/st2contrib#ansible-pack)
-[![aws icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/aws/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/aws) | [aws](https://github.com/StackStorm/st2contrib/tree/master/packs/aws) | st2 content pack containing Amazon Web Services integrations. | aws, amazon web services, amazon, ec2, sqs, sns, route53, cloud, iam, vpc, s3, CloudFormation, RDS, SQS | [st2-dev](mailto:info@stackstorm.com) | 0.6.3 | [click](https://github.com/StackStorm/st2contrib#aws-pack)
+[![aws icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/aws/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/aws) | [aws](https://github.com/StackStorm/st2contrib/tree/master/packs/aws) | st2 content pack containing Amazon Web Services integrations. | aws, amazon web services, amazon, ec2, sqs, sns, route53, cloud, iam, vpc, s3, CloudFormation, RDS, SQS | [st2-dev](mailto:info@stackstorm.com) | 0.6.4 | [click](https://github.com/StackStorm/st2contrib#aws-pack)
 [![azure icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/azure/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/azure) | [azure](https://github.com/StackStorm/st2contrib/tree/master/packs/azure) | st2 content pack containing Microsoft Azure integrations. | microsoft, azure, cloud, libcloud, servers, virtual machines, azure virtual machines | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#azure-pack)
 [![bitbucket icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/bitbucket/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/bitbucket) | [bitbucket](https://github.com/StackStorm/st2contrib/tree/master/packs/bitbucket) | Pack which allows integration with Bitbucket. | bitbucket, vcs, mercuriral, git, source control | [Aamir](mailto:raza.aamir01@gmail.com) | 0.1.1 | [click](https://github.com/StackStorm/st2contrib#bitbucket-pack)
 [![bitcoin icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/bitcoin/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/bitcoin) | [bitcoin](https://github.com/StackStorm/st2contrib/tree/master/packs/bitcoin) | bitcoin integration pack | bitcoin | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#bitcoin-pack)
@@ -139,7 +139,7 @@ Icon | Name | Description | Keywords | Author | Latest Version | Available Resou
 [![urbandict icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/urbandict/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/urbandict) | [urbandict](https://github.com/StackStorm/st2contrib/tree/master/packs/urbandict) | st2 content pack containing urban dictionary integrations | urban dict, urban dictionary, puns | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#urbandict-pack)
 [![vault icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/st2/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vault) | [vault](https://github.com/StackStorm/st2contrib/tree/master/packs/vault) | vault |  | [steve.neuharth](mailto:steve.neuharth@target.com) | 0.0.1 | [click](https://github.com/StackStorm/st2contrib#vault-pack)
 [![victorops icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/victorops/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/victorops) | [victorops](https://github.com/StackStorm/st2contrib/tree/master/packs/victorops) | Packs which allows integration with Victorops events. | victorps integration, open, ack and resolve incidents | [Aamir](mailto:raza.aamir01@gmail.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#victorops-pack)
-[![vsphere icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/vsphere/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | [vsphere](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | st2 content pack containing vsphere integrations. |  | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#vsphere-pack)
+[![vsphere icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/vsphere/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | [vsphere](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | st2 content pack containing vsphere integrations. |  | [Paul Mulvihill](mailto:paul.mulvihill@pulsant.com) | 0.2 | [click](https://github.com/StackStorm/st2contrib#vsphere-pack)
 [![webpagetest icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/webpagetest/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/webpagetest) | [webpagetest](https://github.com/StackStorm/st2contrib/tree/master/packs/webpagetest) | st2 content pack containing webpagetest integrations | webpagetest, benchmarking | [Linuturk](mailto:linuturk@onitato.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#webpagetest-pack)
 [![windows icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/windows/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/windows) | [windows](https://github.com/StackStorm/st2contrib/tree/master/packs/windows) | st2 content pack containing windows integrations | windows, wmi, windows management interface, wql | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#windows-pack)
 [![witai icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/witai/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/witai) | [witai](https://github.com/StackStorm/st2contrib/tree/master/packs/witai) | Wit AI Integration with StackStorm |  | [James Fryman](mailto:james@stackstorm.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#witai-pack)
@@ -1062,6 +1062,12 @@ solo | Performs chef-solo run on remote hosts.
 ### circle_ci pack
 
 ![circle_ci icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/circle_ci/icon.png)
+
+#### Sensors
+
+Name | Description
+---- | -----------
+CircleCIWebhookSensor | CircleCI Webhook sensor
 
 #### Actions
 
@@ -2494,6 +2500,17 @@ vm_create_from_template | Create a new VM from existing template.
 vm_destroy | Wait for a Task to complete and returns its result.
 vm_disk_add | Add disk to a VM.
 vm_edit_cpu_memory | Power off a VM.
+vm_hw_barebones_create | Create BareBones VM (CPU, Ram, Graphics Only)
+vm_hw_basic_build | WorkFlow to build a base VM hardware and power it on (CPU, RAM, HDD, NIC)
+vm_hw_cpu_mem_edit | Adjust CPU and RAM allocation for a Virtual Machine
+vm_hw_detail_get | Retrieve details of a VM object
+vm_hw_hdd_add | Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.
+vm_hw_nic_add | Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.
+vm_hw_nic_edit | Alter Configuration of Network Adapater
+vm_hw_power_off | Performs a Hardware Power Off of a VM. Note: This is not an OS shutdown.
+vm_hw_power_on | Performs a Hardware Power On of a VM.
+vm_hw_scsi_controller_add | Add SCSI Controller to VM. You must provide at least one of VM_ID or Name
+vm_hw_uuid_get | Retrieve uuid of a VM object
 vm_poweroff | Power off a VM.
 vm_poweron | Power on a VM.
 vm_vnic_add | Add nic to a VM.
