@@ -13,19 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from vmwarelib import inventory
-from vmwarelib.actions import BaseAction
+from lib.icsp import ICSPBaseActions
 
 
-class StopVM(BaseAction):
+class GetCA(ICSPBaseActions):
+    def run(self, mid, connection_details=None):
+        self.set_connection(connection_details)
+        self.get_sessionid()
+        endpoint = "/rest/os-deployment-servers/%s" % mid
 
-    def run(self, vm, kill=False):
-        # convert ids to stubs
-        vm_obj = inventory.get_virtualmachine(self.si_content, moid=vm)
-        if kill:
-            vm_obj.TerminateVM()
-            success = True
-        else:
-            task = vm_obj.PowerOffVM_Task()
-            success = self._wait_for_task(task)
-        return {'success': success}
+        return self.icsp_get(endpoint)

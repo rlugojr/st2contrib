@@ -91,7 +91,7 @@ Icon | Name | Description | Keywords | Author | Latest Version | Available Resou
 [![github icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/github/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/github) | [github](https://github.com/StackStorm/st2contrib/tree/master/packs/github) | st2 content pack containing github integrations | github, git, scm | [st2-dev](mailto:info@stackstorm.com) | 0.4 | [click](https://github.com/StackStorm/st2contrib#github-pack)
 [![google icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/google/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/google) | [google](https://github.com/StackStorm/st2contrib/tree/master/packs/google) | st2 content pack containing google integrations | google, search | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#google-pack)
 [![gpg icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/gpg/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/gpg) | [gpg](https://github.com/StackStorm/st2contrib/tree/master/packs/gpg) | Pack for working with GPG. | gpg, pgp, gnupg, privacy, encryption, crypto | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#gpg-pack)
-[![hpe-icsp icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/hpe-icsp/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/hpe-icsp) | [hpe-icsp](https://github.com/StackStorm/st2contrib/tree/master/packs/hpe-icsp) | Pack for HP Enterprise Insight Control Server Provisioning Integration |  | [Paul Mulvihill](mailto:paul.mulvihill@pulsant.com) | 0.2 | [click](https://github.com/StackStorm/st2contrib#hpe-icsp-pack)
+[![hpe-icsp icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/hpe-icsp/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/hpe-icsp) | [hpe-icsp](https://github.com/StackStorm/st2contrib/tree/master/packs/hpe-icsp) | Pack for HP Enterprise Insight Control Server Provisioning Integration |  | [Paul Mulvihill](mailto:paul.mulvihill@pulsant.com) | 0.3 | [click](https://github.com/StackStorm/st2contrib#hpe-icsp-pack)
 [![hubot icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/hubot/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/hubot) | [hubot](https://github.com/StackStorm/st2contrib/tree/master/packs/hubot) | Hubot integration pack |  | [James Fryman](mailto:james@stackstorm.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#hubot-pack)
 [![hue icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/hue/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/hue) | [hue](https://github.com/StackStorm/st2contrib/tree/master/packs/hue) | Philips Hue Pack | hue, philips, iot | [James Fryman](mailto:james@stackstorm.com) | 0.0.1 | [click](https://github.com/StackStorm/st2contrib#hue-pack)
 [![ipcam icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/ipcam/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/ipcam) | [ipcam](https://github.com/StackStorm/st2contrib/tree/master/packs/ipcam) | st2 content pack containing integration for various home IP cams | ipcam, ip cam, ip camera, camera, smart home, home automation | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#ipcam-pack)
@@ -143,7 +143,7 @@ Icon | Name | Description | Keywords | Author | Latest Version | Available Resou
 [![urbandict icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/urbandict/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/urbandict) | [urbandict](https://github.com/StackStorm/st2contrib/tree/master/packs/urbandict) | st2 content pack containing urban dictionary integrations | urban dict, urban dictionary, puns | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#urbandict-pack)
 [![vault icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/vault/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vault) | [vault](https://github.com/StackStorm/st2contrib/tree/master/packs/vault) | vault |  | [steve.neuharth](mailto:steve.neuharth@target.com) | 0.0.1 | [click](https://github.com/StackStorm/st2contrib#vault-pack)
 [![victorops icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/victorops/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/victorops) | [victorops](https://github.com/StackStorm/st2contrib/tree/master/packs/victorops) | Packs which allows integration with Victorops events. | victorps integration, open, ack and resolve incidents | [Aamir](mailto:raza.aamir01@gmail.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#victorops-pack)
-[![vsphere icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/vsphere/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | [vsphere](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | st2 content pack containing vsphere integrations. |  | [Paul Mulvihill](mailto:paul.mulvihill@pulsant.com) | 0.2 | [click](https://github.com/StackStorm/st2contrib#vsphere-pack)
+[![vsphere icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/vsphere/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | [vsphere](https://github.com/StackStorm/st2contrib/tree/master/packs/vsphere) | st2 content pack containing vsphere integrations. |  | [Paul Mulvihill](mailto:paul.mulvihill@pulsant.com) | 0.3 | [click](https://github.com/StackStorm/st2contrib#vsphere-pack)
 [![webpagetest icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/webpagetest/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/webpagetest) | [webpagetest](https://github.com/StackStorm/st2contrib/tree/master/packs/webpagetest) | st2 content pack containing webpagetest integrations | webpagetest, benchmarking | [Linuturk](mailto:linuturk@onitato.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#webpagetest-pack)
 [![windows icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/windows/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/windows) | [windows](https://github.com/StackStorm/st2contrib/tree/master/packs/windows) | st2 content pack containing windows integrations | windows, wmi, windows management interface, wql | [st2-dev](mailto:info@stackstorm.com) | 0.1 | [click](https://github.com/StackStorm/st2contrib#windows-pack)
 [![witai icon](https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/witai/icon.png)](https://github.com/StackStorm/st2contrib/tree/master/packs/witai) | [witai](https://github.com/StackStorm/st2contrib/tree/master/packs/witai) | Wit AI Integration with StackStorm |  | [James Fryman](mailto:james@stackstorm.com) | 0.1.0 | [click](https://github.com/StackStorm/st2contrib#witai-pack)
@@ -1447,7 +1447,7 @@ Name | Description
 icsp_buildplan_apply | Apply Buidlplan to Specified Servers
 icsp_buildplan_get | Retreive Available BuildPlans
 icsp_ca_get | Retreive CA Certificate from ICSP
-icsp_ids_to_os | Apply OS Build plans to a series of Machine Serial Number/UUIDs.
+icsp_ids_to_os | Apply OS Build plans to a series of Machine Serial Number/UUIDs. This will create a batch job in ICSP for the specified servers.
 icsp_job_status_get | Return Status of specified Job
 icsp_mid_get | Retreive MIDs for specified servers.
 icsp_multi_server_attribute_add | Apply Attribute with server unique values across multiple servers.
@@ -1456,6 +1456,7 @@ icsp_server_attribute_del | Remove a Server attribute on a ICSP registered serve
 icsp_server_attributes_get | Retrieve Attributes set against Server
 icsp_server_data_format | Generate Server Data Input for bulidplan apply action. MID and Hostname arrays must contain the same number of values. Option values of domain and workgroup can be provided but will be ignored if element count differs from MID count.
 icsp_server_delete | Delete server from ICSP server list.
+icsp_server_details_get | Retrieve details for specified server
 
 ### hubot pack
 
@@ -2583,32 +2584,22 @@ Name | Description
 get_vmconsole_urls | Retrieves urls of the virtual machines' consoles
 get_vms | Retrieves the virtual machines on a vCenter Server system. It computes the union of Virtual Machine sets based on each parameter.
 hello_vsphere | Wait for a Task to complete and returns its result.
-new_harddisk | Adds a new or existing virtual disk to provided Virtual Machines.
-new_networkadapter | Adds a new network adapter to provided Virtual Machines.
-remove_vm | Removes the Virtual Machine.
 set_vm | Changes configuration of a Virtual Machine.
-start_vm | Starts the Virtual Machine.
-stop_vm | Stops the Virtual Machine.
 vm_check_tools | Wait for a Task to complete and returns its result.
 vm_create_from_template | Create a new VM from existing template.
-vm_destroy | Wait for a Task to complete and returns its result.
-vm_disk_add | Add disk to a VM.
-vm_edit_cpu_memory | Power off a VM.
 vm_hw_barebones_create | Create BareBones VM (CPU, Ram, Graphics Only)
 vm_hw_basic_build | WorkFlow to build a base VM hardware and power it on (CPU, RAM, HDD, NIC)
 vm_hw_cpu_mem_edit | Adjust CPU and RAM allocation for a Virtual Machine
 vm_hw_detail_get | Retrieve details of a VM object
 vm_hw_hdd_add | Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.
+vm_hw_moid_get | Retrieve moid of a VM object
 vm_hw_nic_add | Add New Hdd to Virtual Machine. You must Provide Either VM_ID or Name.
 vm_hw_nic_edit | Alter Configuration of Network Adapater
 vm_hw_power_off | Performs a Hardware Power Off of a VM. Note: This is not an OS shutdown.
 vm_hw_power_on | Performs a Hardware Power On of a VM.
+vm_hw_remove | Removes the Virtual Machine.
 vm_hw_scsi_controller_add | Add SCSI Controller to VM. You must provide at least one of VM_ID or Name
 vm_hw_uuid_get | Retrieve uuid of a VM object
-vm_poweroff | Power off a VM.
-vm_poweron | Power on a VM.
-vm_vnic_add | Add nic to a VM.
-vm_vnic_update | Add nic to a VM.
 wait_task | Wait for a Task to complete and returns its result.
 
 ### webpagetest pack

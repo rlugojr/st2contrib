@@ -13,20 +13,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import eventlet
-
-from pyVmomi import vim
-
 from vmwarelib import inventory
 from vmwarelib.actions import BaseAction
 
 
-class VMPowerOn(BaseAction):
+class GetVMMoid(BaseAction):
 
-    def run(self, vm_id):
-        # convert ids to stubs
-        vm = inventory.get_virtualmachine(self.si_content, moid=vm_id)
-        task = vm.PowerOnVM_Task(None)
-        while task.info.state == vim.TaskInfo.State.running:
-            eventlet.sleep(1)
-        return {'state': str(task.info.state)}
+    def run(self, vm_names):
+        results = {}
+
+        vmlist = inventory.get_virtualmachines(self.si_content)
+
+        for vm in vmlist.view:
+            if vm_names:
+                if vm.name in vm_names:
+                    results[vm.name] = str(vm).split(':')[-1].replace("'", "")
+            else:
+                results[vm.name] = str(vm).split(':')[-1].replace("'", "")
+
+        return results
