@@ -1,1 +1,1 @@
-remedy_api
+-e git+https://github.com/fgimian/pyremedy#egg=pyremedy

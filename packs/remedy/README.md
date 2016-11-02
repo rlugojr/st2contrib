@@ -2,27 +2,22 @@
 
 This integration allows bi-directional communication between StackStorm and Remedy API
 
-# Overview
+Initial work based on PR by Renan Caldeira, updated by Lindsay Hill
 
-
-# Setup
 ## Configuration
 
-### Outgoing Integration
+Copy the example configuration in [remedy.yaml.example](./remedy.yaml.example)
+to `/opt/stackstorm/configs/remedy.yaml` and edit as required.
+
+It must contain:
 
 * `servername` - Remedy Server Name
 * `serverport` - Remedy Server Port
 * `username` - Username
 * `password` - Password
 
-### Incoming Integration
-
-
-
-```
-Accept: application/json
-Content-Type: application/json
-```
+You can also use dynamic values from the datastore. See the
+[docs](https://docs.stackstorm.com/reference/pack_configs.html) for more info.
 
 
 ## Actions

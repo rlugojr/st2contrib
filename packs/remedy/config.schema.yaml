@@ -1,0 +1,21 @@
+---
+  servername:
+    description: "Remedy Server Name"
+    type: "string"
+    secret: false
+    required: true
+  serverport:
+    description: "Remedy Server Port"
+    type: "string"
+    secret: false
+    required: true
+  username:
+    description: "Remedy integration username"
+    type: "string"
+    secret: false
+    required: true
+  password:
+    description: "Remedy integration password"
+    type: "string"
+    secret: true
+    required: true

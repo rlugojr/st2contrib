@@ -1,6 +1,6 @@
 from st2actions.runners.pythonrunner import Action
 from pyremedy.ars import ARS
-from pyremedy.exceptions import ARSError
+
 
 class BaseAction(Action):
     def __init__(self, config):
