@@ -2,6 +2,11 @@
 
 Integrates with [Sensu](http://sensuapp.org/) monitoring framework.
 
+## WARNING
+This pack has had a major rewrite as of version 0.3.0. The local-script runners have been replaced
+with Python runners. Some broken actions have been removed. Some output has changed.
+If you are using Sensu actions, please check your workflows & rules.
+
 ### Prerequisites
 Sensu and StackStorm, up and running. See installation for [Sensu](http://sensuapp.org/docs/latest/installation/) and [StackStorm](http://docs.stackstorm.com/install).
 
@@ -16,7 +21,14 @@ Sensu and StackStorm, up and running. See installation for [Sensu](http://sensua
 	    # Check it:
 	    st2 action list --pack=sensu
 
-2. Adjust Sensu API endpoint and credentials in [`/opt/stackstorm/packs/sensu/config.yaml`](./config.yaml) to point to the right Sensu instance.
+2. Copy the example configuration in [sensu.yaml.example](./sensu.yaml.example)
+to `/opt/stackstorm/configs/sensu.yaml` and edit as required. It must contain:
+
+* ``host`` - Host where Sensu API endpoint is running
+* ``port`` - Sensu API port (default 4567)
+* ``user`` - Sensu integration user
+* ``pass`` - Sensu integration password
+* ``ssl`` - Whether to verify the Sensu SSL certificate or not
 
 3. Check that the actions work:
 

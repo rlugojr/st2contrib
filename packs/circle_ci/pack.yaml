@@ -1,3 +1,5 @@
+---
+ref: circle_ci
 name: Circle CI
 description: Pack which allows integration with Circle CI.
 keywords:
@@ -5,6 +7,6 @@ keywords:
  - circle ci
  - continous integration
  - ci
-version: 0.2.0
+version: 0.3.0
 author: StackStorm dev
 email: support@stackstorm.com

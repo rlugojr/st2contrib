@@ -1,7 +1,8 @@
 ### Place information about your pack version here.
 ---
+ref: mqtt
 name: mqtt
 description: MQTT Integration for StackStorm
-version: 0.1.0
+version: 0.2.0
 author: James Fryman
 email: james@stackstorm.com

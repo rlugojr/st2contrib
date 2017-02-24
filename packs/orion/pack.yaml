@@ -1,4 +1,5 @@
 ---
+ref: orion
 name: orion
 description: Intergrate via the OrionSDK to SolarWinds Orion
 keywords:
@@ -6,6 +7,6 @@ keywords:
    - orion
    - ncm
    - npm
-version: 0.4.1
+version: 0.5.0
 author: Jon Middleton
 email: jon.middleton@pulsant.com
